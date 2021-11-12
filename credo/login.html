@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/9083ecc7c6.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        body{
+            font-family: "Open Sans",Arial,Helvetica,sans-serif;
+            
+        }
+        #main{
+            margin: auto;
+           
+        }
+        #header{
+            background-color:white;
+            font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    
+        }
+        #heatop{
+            display: flex;
+            flex-direction: row;         
+            padding-bottom: 3px;
+            font-family: Roboto,sans-serif;
+            font-size: 15px;
+            letter-spacing: .05em;
+           -webkit-transition: color .4s;
+            transition: color .4s;
+            line-height: 1.38em;
+            color: #231f20;
+            font-weight: 400;
+            border-bottom: 1px solid grey;
+           
+        }
+        #heatop > div{
+         
+        margin-left: 30px;
+         cursor: pointer;
+        }
+        #heatop >div :hover{
+          color:rosybrown;
+        }
+
+        
+        #heabot{
+            display: flex;
+            flex-direction: row;
+           
+            border-bottom: .5px solid rgb(197, 197, 197);
+        }
+        #heabot >div :hover{
+            border: 1px solid white;
+            border-radius: 4px;
+           
+            color:rosybrown;
+        } 
+       
+        #search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    height: 39px;
+    margin-left: 350px;
+    border-bottom: .5px solid grey;
+    
+    margin-top: 40px;
+}
+
+#search-box > input {
+    border: none;
+    width: 420px;
+    height: 36px;
+    border-radius: 5px;
+    padding: 1px 2px 1px 13px;
+    font-size: 15px;
+    outline: none;
+   
+}
+
+#search-box > img {
+    width: 19px;
+    height: 19px;
+    margin: auto 10px auto 10px;
+}
+
+#heabot >div{
+    padding-bottom: 15px;
+    font-family: Roboto ,sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+   -webkit-transition: color .4s;
+    transition: color .4s;
+    line-height: 1.6em;
+    color: #231f20;
+    font-weight: 700;
+    margin-left: 50px;
+    padding-top: 15px;
+}
+.nav{
+    color: #418993;
+}
+        
+        #heabot >div>h1{
+            font-size: 18px;
+         font-weight: 600;
+         color: white;
+         margin: 0px 10px 10px 10px;
+
+        }
+        #account{
+            color: white;
+        }
+        #login{
+            background: transparent;
+            color: black;
+            font-size: 14px ;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 7px;
+
+        }
+        #cart{
+            background: transparent;
+            color: white;
+            font-size: 14px ;
+            font-weight: 600;
+            cursor: pointer;
+
+        }
+        .iconic{
+            margin-left: 400px;
+        }
+        .iconic>img{
+            max-width: 45%;
+        }
+        #heatop1{
+          display: flex;
+          flex-direction: row;
+          margin-top: 40px;
+          margin-right: 200px;
+        
+        }
+        #heatop1 > div{
+         
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+        #heatop2{
+            display: flex;
+          flex-direction: row;       
+          margin-top: 40px;
+        }
+        #heatop2>div{
+            margin-left: 20px;
+        }
+        #toper{
+         background-color: #418993;
+         color: white;
+         text-align: center;
+         padding: 10px;
+    height: 45px;
+    overflow: hidden;
+    max-width: 100%;
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .6px;
+    line-height: 1.3em;
+        }   
+          #data {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20%;
+      grid-gap: 5%;
+    }
+
+    #data>div >img {
+      width: 40%;
+    }
+
+    #data div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #cartDetail {
+      margin-top: 20px;
+    }
+    .utton{
+        width: 250px;
+                height: 50px;
+                margin: 10px 10px 10px 10px ;
+                background-color: #ffb800;
+                border-color: #ffb800;
+                color: #092b50;
+                border-style: solid;
+                border-width: 1px;
+    }
+    #footer{
+            background-color: #18244a
+          
+        }
+        #footer1{
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid #18244a;
+           
+        }
+        #footer1 >div{
+          width: 23%;
+          margin: 1%;
+          text-align: center;
+         color: #fff;
+
+        }
+        #footer1>div>h1{
+            color: white;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+        #footer-hr-line {
+           width: 1110px;
+           height: 0;
+           margin: auto;
+           margin-top: 30px;
+           border-bottom: 1px solid #fff;
+           opacity: 0.1;
+          }
+          .footer2{
+              margin: auto;
+              padding: 20px;
+              text-align: center;
+              color: white;
+          }
+          .first >img{
+              border: 4px solid black;
+              max-width: 70%;
+          }
+          #signupform{
+              margin: 40px 520px;
+             
+              
+              
+          }
+          #cust{
+              margin-bottom: 40px;
+              border-bottom: 2px solid black;
+              font-size: 28px;
+              letter-spacing: 1px;
+              padding-bottom: 10px;
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+          }
+         
+          #password{
+           height: 45px;
+           width: 350px;
+           margin: 20px 0px 20px 0px;
+          }
+          #email{
+            height: 45px;
+           width: 350px;
+           margin: 20px 0px 20px 0px ;
+
+          }
+          button{
+              margin-top: 20px;
+            background-color:#be6274;
+            color: white;
+            width: 350px;
+            height:40px;
+            cursor: pointer;
+          }
+          #tail{
+              justify-content: center;
+              text-align: center;
+          }
+          #tail>div{
+              margin-top: 20px;
+          }
+
+        </style>
+        <body>
+            <div id="toper">
+                Free Shipping over 50$ || Refer a friend get 10$
+               </div>
+  
+         
+              <div id="header">
+              <div id="heatop">
+                 <div id="heatop1">
+                      <div>
+                      <span> Stores & Service</span> 
+                   </div>
+                   <div>
+                       <span>Reward</span>
+                   </div>
+                   <div>
+                     <span>
+                       Chat Live
+       
+                     </span>  
+       
+                   </div>
+                  </div>
+                  <div class="iconic">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQygZaF_yoQ0JdLrV33NdinGkw7oYwwTRTWwQ&usqp=CAU">
+                  </div>
+                  <div id="search-box">
+                      <i class="fas fa-search"></i>
+                      <input
+                          type="text"
+                          id="search-input"
+                          placeholder="search"
+                      />
+                     
+                  </div>
+                 <div id="heatop2">
+                  <div>
+                      <a href="\login.html">
+                  <i class="far fa-user"></i>
+                  </a>
+              </div>
+              <div>
+                 
+                      <i class="far fa-heart"></i>
+              
+          </div>
+              
+                             
+                  <div >
+                     <a href="\cart.html">
+                      <i class="fas fa-briefcase"></i>
+                  </a>
+                       </div>
+                      </div>
+              </div>
+              <div id="heabot">
+               
+                  <div>
+                      <a>
+                        Best Seller 
+            
+                      </a> 
+                    </div>
+              
+              <div>
+                 <a href="\product.html">New</a> 
+              </div>
+              <div>
+                <a>
+                  Brands
+      
+                </a> 
+              </div>
+              <div>
+                  <a>
+                     Skin care 
+      
+                  </a>
+                
+              </div>
+              <div>
+                  <a>
+                      Makeup
+      
+                  </a>
+                
+              </div>
+              <div>
+                  <a>
+                     Hair
+      
+                  </a>
+                 
+              </div>
+              <div>
+                  <a>
+                     Fragrance
+      
+                  </a>
+                
+              </div>
+              <div>
+                  <a>
+                     Gift
+      
+                  </a>
+                
+              </div>
+              <div>
+                  <a>
+                     Bath & Body
+      
+                  </a>
+                 
+              </div>
+              <div>
+                  <a>
+                     Feautured
+      
+                  </a>
+                
+              </div>
+              <div >
+                  <a class="nav">
+                     Why Clean ?
+      
+                  </a>
+                 
+              </div>
+              </div>
+
+              <div id="signupform">
+                  <div id="cust">
+                      CUSTOMER LOGIN
+                  </div>
+
+                  <div>
+                      EMAIL
+                      <br>
+                      <input type="text" id="email" >
+                  </div>
+                  <div id="pasfor">
+                      <div>
+                        PASSWORD
+                        <br>
+                        <input type="text" id="password" >
+                      </div>
+                      <div>
+                        FORGOT PASSWORD?
+                      </div>
+                     
+                  </div>
+                  <div>
+                      <a href="\index1.html">
+                      <button>
+                          LOGIN
+                      </button>
+                    </a>
+                  </div>
+                  <div id="tail">
+                  <div>
+                      NEW CUSTOMER? <b>SIGNUP</b>
+                  </div>
+                  <div>
+                      SHOPPED BEFORE? SIGN UP TO ACTIVATE YOUR 
+                      <br>
+                      ACCOUNT.
+                  </div>
+                </div>
+
+              </div>
+              
+              
+
+              <div id="footer">
+                <div id="footer1">
+                    <div>
+                        <p>
+                            Your Daily Dose of Beauty: enter your email address
+                        </p>
+                        <a><i class="fab fa-facebook"></i></a>
+                       
+                        <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/Badge-reviewedby-black.png?17727623241348939858">
+                
+                    </div>
+                
+                <div>
+                    <h1>
+                        About Us 
+                    </h1>
+                    <p>
+                        Track MY Package
+                    </p>
+                    <p>
+                        Helping Ordering
+                    </p>
+                    <p>
+                        International Orders
+                    </p>
+                    <p>
+                        Pay by amazon payments
+                    </p>
+                    <P>
+                        Pay by Pay pal
+                    </P>
+                   
+            
+                </div>
+                <div>
+                    <h1>
+                       Resources
+                    </h1>
+                    <P>
+                       My Account
+                    </P>
+                    <P>
+                        Your Product Finder
+                    </P>
+                    <P>
+                       Refer a Friend
+                    </P>
+                    <P>
+                        StudentBeans
+                    </P>
+                    <P>
+                        Terms of Use
+                    </P>
+                    <P>
+                        Privacy Policy
+                    </P>
+            
+                </div>
+                <div>
+                    <h1>
+                      Contact Us
+                    </h1>
+                    <P>
+                       CredoLive(Chat with us)
+                    </P>
+                    <P>
+                        FAQs
+                    </P>
+                    <P>
+                       arealperson@credobeauty.com
+                    </P>
+                    <P>
+                        1-844-692-7336
+                    </P>
+                    
+            
+                </div>
+                
+                </div>
+                
+            
+
+             
+                    
+           
+                        </body>
+                        </html>
+                        <script>
+                            let userArray = [
+                             {
+                            mailId: "rani619@gmail.com",
+                             password: "1234",
+                             },
+                             ];
+                            let email = document.getElementById("signup-form-title-input-box");
+                            let pass = document.getElementById("signup-form-title-input-pass");
+                            let signInError = document.getElementById("Login-error-msg");
+                            function userLogin() {
+                            let flag = true;
+                            userArray.forEach(function (el) {
+                            if (el.mailId == email.value && el.password == pass.value) {
+                            showDashboard();
+                            flag = false;
+                            }
+                            if (el.mailId == email.value && el.password != pass.value) {
+                            signInError.innerHTML = "Wrong password!!";
+                            flag = false;
+                            }
+                            });
+                            function showDashboard() {
+                            window.location.href = "index1.html";
+                            }
+                        </script>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/9083ecc7c6.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        body{
+            font-family: "Open Sans",Arial,Helvetica,sans-serif;
+            
+        }
+        #main{
+            margin: auto;
+           
+        }
+        #header{
+            background-color:white;
+            font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    
+        }
+        #heatop{
+            display: flex;
+            flex-direction: row;         
+            padding-bottom: 3px;
+            font-family: Roboto,sans-serif;
+            font-size: 15px;
+            letter-spacing: .05em;
+           -webkit-transition: color .4s;
+            transition: color .4s;
+            line-height: 1.38em;
+            color: #231f20;
+            font-weight: 400;
+            border-bottom: 1px solid grey;
+           
+        }
+        #heatop > div{
+         
+        margin-left: 30px;
+         cursor: pointer;
+        }
+        #heatop >div :hover{
+          color:rosybrown;
+        }
+
+        
+        #heabot{
+            display: flex;
+            flex-direction: row;
+           
+            border-bottom: .5px solid rgb(197, 197, 197);
+        }
+        #heabot >div :hover{
+            border: 1px solid white;
+            border-radius: 4px;
+           
+            color:rosybrown;
+        } 
+       
+        #search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    height: 39px;
+    margin-left: 350px;
+    border-bottom: .5px solid grey;
+  
+}
+
+#search-box > input {
+    border: none;
+    width: 420px;
+    height: 36px;
+    border-radius: 5px;
+    padding: 1px 2px 1px 13px;
+    font-size: 15px;
+    outline: none;
+   
+}
+
+#search-box > img {
+    width: 19px;
+    height: 19px;
+    margin: auto 10px auto 10px;
+}
+
+#heabot >div{
+    padding-bottom: 15px;
+    font-family: Roboto ,sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+   -webkit-transition: color .4s;
+    transition: color .4s;
+    line-height: 1.6em;
+    color: #231f20;
+    font-weight: 700;
+    margin-left: 50px;
+    padding-top: 15px;
+}
+.nav{
+    color: #418993;
+}
+        
+        #heabot >div>h1{
+            font-size: 18px;
+         font-weight: 600;
+         color: white;
+         margin: 0px 10px 10px 10px;
+
+        }
+        #account{
+            color: white;
+        }
+        #login{
+            background: transparent;
+            color: black;
+            font-size: 14px ;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 7px;
+
+        }
+        #cart{
+            background: transparent;
+            color: white;
+            font-size: 14px ;
+            font-weight: 600;
+            cursor: pointer;
+
+        }
+        .iconic{
+            margin-left: 400px;
+        }
+        .iconic>img{
+            max-width: 45%;
+        }
+        #heatop1{
+          display: flex;
+          flex-direction: row;
+          margin-top: 40px;
+          margin-right: 200px;
+        
+        }
+        #heatop1 > div{
+         
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+        #heatop2{
+            display: flex;
+          flex-direction: row;       
+          margin-top: 40px;
+          margin-right: 0%;
+        }
+        #heatop2>div{
+            margin-left: 20px;
+        }
+        #toper{
+         background-color: #418993;
+         color: white;
+         text-align: center;
+         padding: 10px;
+    height: 45px;
+    overflow: hidden;
+    max-width: 100%;
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .6px;
+    line-height: 1.3em;
+        }
+   
+          #data{
+            display: flex;
+            flex-direction: row;
+           
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+        }
+        #data >div{
+           width: 14%;
+           margin: 1%;
+           text-align: center;
+           padding: 1%;
+           box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
+           position: relative;
+          
+
+        }
+        #data >div>h1{
+            font-size: 12;
+           font-size: 12px;
+           font-weight: 400;
+           height: 90px;
+           overflow-y: hidden;
+        }
+
+        #data >div >img{
+            max-width: 100%;
+           
+        }
+        #data >div >h2{
+            margin-bottom: 0px;
+            color: #092b50;
+            font-size: 16px;
+            font-weight: 700;
+            position: absolute;
+            bottom:50px;
+            left: 70px;
+        }
+        #data >div> button{
+            background: #418993 url(https://cdn11.bigcommerce.com/s-0kvv9/stencil/3db0b4d0-dc1d-0139-35d7-46e39c32b38c/e/c71c39a0-dc1e-0139-7758-1e80c6e1f80d/img/cart.png) 12px center/auto 20px no-repeat;
+            padding: .78571rem 0 .78571rem 1.5rem;
+            color: white;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 0;
+            font-size: 1rem;
+            font-weight: 600;
+            font-size: 16px;
+           
+            position: absolute;
+            bottom: 2px;
+            left:2px
+        }
+        #data > div > button :hover{
+        background-color: #09f;
+   
+        } 
+        #gocart{
+                width: 250px;
+                height: 50px;
+                margin: 10px 10px 10px 10px ;
+                background-color: #418993;;
+                border-color: #418993;;
+                color: #092b50;
+                border-style: solid;
+                border-width: 1px;
+    cursor: pointer;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-size: 17px;
+    padding: .85714rem 2.28571rem;
+    border-radius: 4px;
+    outline: 0;
+            }
+            #footer{
+            background-color: #18244a
+          
+        }
+        #footer1{
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid #18244a;
+           
+        }
+        #footer1 >div{
+          width: 23%;
+          margin: 1%;
+          text-align: center;
+         color: #fff;
+
+        }
+        #footer1>div>h1{
+            color: white;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+        #footer-hr-line {
+           width: 1110px;
+           height: 0;
+           margin: auto;
+           margin-top: 30px;
+           border-bottom: 1px solid #fff;
+           opacity: 0.1;
+          }
+          .footer2{
+              margin: auto;
+              padding: 20px;
+              text-align: center;
+              color: white;
+          }
+       
+
+
+
+
+    </style>
+
+    <body>      <div id="toper">
+        Free Shipping over 50$ || Refer a friend get 10$
+       </div>
+
+ 
+      <div id="header">
+      <div id="heatop">
+         <div id="heatop1">
+              <div>
+              <span> Stores & Service</span> 
+           </div>
+           <div>
+               <span>Reward</span>
+           </div>
+           <div>
+             <span>
+               Chat Live
+
+             </span>  
+
+           </div>
+          </div>
+          <div class="iconic">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQygZaF_yoQ0JdLrV33NdinGkw7oYwwTRTWwQ&usqp=CAU">
+          </div>
+          
+         <div id="heatop2">
+            <div id="search-box">
+                <i class="fas fa-search"></i>
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="search"
+                />
+               
+            </div>
+          <div>
+              <a href="\logintoy.html">
+          <i class="far fa-user"></i>
+          </a>
+      </div>
+      <div>
+         
+              <i class="far fa-heart"></i>
+      
+  </div>
+      
+                     
+          <div >
+             <a href="\cart.html">
+              <i class="fas fa-briefcase"></i>
+          </a>
+               </div>
+              </div>
+      </div>
+      <div id="heabot">
+       
+          <div>
+              <a>
+                Best Seller 
+    
+              </a> 
+            </div>
+      
+      <div>
+         <a href="\product toywiz.html">New</a> 
+      </div>
+      <div>
+        <a>
+          Brands
+
+        </a> 
+      </div>
+      <div>
+          <a>
+             Skin care 
+
+          </a>
+        
+      </div>
+      <div>
+          <a>
+              Makeup
+
+          </a>
+        
+      </div>
+      <div>
+          <a>
+             Hair
+
+          </a>
+         
+      </div>
+      <div>
+          <a>
+             Fragrance
+
+          </a>
+        
+      </div>
+      <div>
+          <a>
+             Gift
+
+          </a>
+        
+      </div>
+      <div>
+          <a>
+             Bath & Body
+
+          </a>
+         
+      </div>
+      <div>
+          <a>
+             Feautured
+
+          </a>
+        
+      </div>
+      <div >
+          <a class="nav">
+             Why Clean ?
+
+          </a>
+         
+      </div>
+      </div>
+      </div>
+        
+       
+       
+        <div id="data">
+
+        </div>
+        <div>
+            <button id="gocart"><a href="\cart.html">Visit Cart</a></button>
+
+        </div>
+         
+        <div id="footer">
+            <div id="footer1">
+                <div>
+                     <p>
+                        Your Daily Dose of Beauty: enter your email address
+                    </p>
+                    <i class="fab fa-facebook"></i>
+                   
+                    <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/Badge-reviewedby-black.png?17727623241348939858">
+            
+                </div>
+            
+            <div>
+                <h1>
+                    About Us 
+                </h1>
+                <p>
+                    Track MY Package
+                </p>
+                <p>
+                    Helping Ordering
+                </p>
+                <p>
+                    International Orders
+                </p>
+                <p>
+                    Pay by amazon payments
+                </p>
+                <P>
+                    Pay by Pay pal
+                </P>
+               
+        
+            </div>
+            <div>
+                <h1>
+                   Resources
+                </h1>
+                <P>
+                   My Account
+                </P>
+                <P>
+                    Your Product Finder
+                </P>
+                <P>
+                   Refer a Friend
+                </P>
+                <P>
+                    StudentBeans
+                </P>
+                <P>
+                    Terms of Use
+                </P>
+                <P>
+                    Privacy Policy
+                </P>
+        
+            </div>
+            <div>
+                <h1>
+                  Contact Us
+                </h1>
+                <P>
+                   CredoLive(Chat with us)
+                </P>
+                <P>
+                    FAQs
+                </P>
+                <P>
+                   arealperson@credobeauty.com
+                </P>
+                <P>
+                    1-844-692-7336
+                </P>
+                
+        
+            </div>
+            
+            </div>
+            
+        
+                        </div>
+
+    </body>
+
+</html>
+
+<script>
+    //WE 2 - Create mock data of products. Store in localstorage, display it on webpage.
+  
+    //Step 1 - create products data - array of objects
+  
+    const toyz = [
+      {
+        name: " Beauty Bright and Blow ",
+        price: " 449.00",
+        image:
+          "https://cdn.shopify.com/s/files/1/0637/6147/products/5060531311414_x760.jpg?v=1633744268",
+      },
+  
+      {
+        name: "  Holiday_EyeCandy_pdp ",
+        price: " 374.00",
+        image: "https://cdn.shopify.com/s/files/1/0637/6147/products/02_Kosas_Holiday_EyeCandy_pdp_value_x760.jpg?v=1632206796",
+      },
+      {
+        name: " Herbal Botanicals",
+        price: " 524.00",
+        image:
+          "https://cdn.shopify.com/s/files/1/0637/6147/products/MomentOfClarity_eComm_FrankCorrea_2021_02_onpink_x760.jpg?v=1634155549",
+      },
+      {
+        name: " Small-wonders",
+        price: "746.00",
+        image:
+          "https://cdn.shopify.com/s/files/1/0637/6147/products/Small-Wonders_Products_x760.jpg?v=1634102276",
+      },
+      {
+        name: " Glorify Products",
+        price: "870.00",
+        image: "https://cdn.shopify.com/s/files/1/0637/6147/products/0909-mara-beauty2623-Editcopy_x600.jpg?v=1601575078",
+      },
+      {
+        name: " West Man Teller ",
+        price: "350.00",
+        image:
+          "https://cdn.shopify.com/s/files/1/0637/6147/products/ILIA_After-Hours_Set_Product_x600.jpg?v=1634102180",
+      },
+    ];
+  
+    //Step 2 - Convert to JSON
+  
+    const toyz_json = JSON.stringify(toyz);
+  
+    //step 3 - Store above data in localstorage
+  
+    localStorage.setItem("mytoyz", toyz_json);
+  
+    //Step 4 - Display on webpage
+  
+    let mytoyz = localStorage.getItem("mytoyz");
+  
+    //Step 4.1 - convert into operatable format, object!
+  
+    mytoyz = JSON.parse(mytoyz);
+  
+    function showProducts() {
+      let data_div = document.getElementById("data");
+  
+      mytoyz.forEach(function (product) {
+        let div = document.createElement("div");
+  
+        let p_name = document.createElement("h1");
+  
+        p_name.innerText = product.name;
+  
+        let p_price = document.createElement("h2");
+  
+        p_price.innerText = product.price;
+  
+        let image = document.createElement("img");
+  
+        image.src = product.image;
+  
+        let btn = document.createElement("button");
+  
+        btn.innerHTML = "Add to cart";
+        btn.onclick = function () {
+          addtoCart(product);
+        };
+        div.append(image, p_name, p_price, btn);
+  
+        data_div.append(div);
+      });
+    }
+  
+    showProducts();
+  
+    if (localStorage.getItem("cart") == null) {
+      localStorage.setItem("cart", JSON.stringify([]));
+    }
+    function addtoCart(p) {
+      let cart_data = JSON.parse(localStorage.getItem("cart"));
+      cart_data.push(p);
+      localStorage.setItem("cart", JSON.stringify(cart_data));
+    }
+    //localStorage.clear();
+  </script>
+  
